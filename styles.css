@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size:1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: rgb(18, 238, 209);
+}
+
+button:hover{
+    background-color:rgb(7, 172, 150) ;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;   
+}
+
+.color-acento{ color:blueviolet}
+
+.color-feliz{color:rgb(18, 238, 209)}
+
+header{
+    background-color: blueviolet;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white; 
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+header a:hover{
+    color: rgb(18, 238, 209);;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+} 
+
+#somos-iscodeland .container{
+    text-align: center;
+    padding: 150px 12px;
+    
+}
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#nuestros .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#caracteristicas1 .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#contacto1 .container{
+    text-align: center;
+    padding: 150px 12px;
+    
+}
+
+#nuestros-servicios{
+    background-color:rgb(30,30,30) ;
+    color: white;
+    text-align: center;
+}
+
+
+#nuestros-servicios .container{
+    padding: 150px 12px; 
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px  ;
+    margin: 30px;
+    border-radius: 15px;
+    
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/front-end.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/fullstack.jpg");
+    
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/python.jpg");
+    
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+
+#aplica-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+
+#aplica-ya h2{
+    font-size: 9vw;
+}
+
+
+#aplica-ya button{
+    font-size: 5vw;
+
+}
+
+footer{
+    background-color:black;
+}
+
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: white;
+}
+
+
+footer .container{
+    height:150px ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #hero h1{
+        font-size: 5em;
+
+    }
+
+
+
+    #somos-iscodeland .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-iscodeland .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #somos-iscodeland h2{
+        margin-top: 0px;
+    }
+
+    #somos-iscodeland .img-container{
+        background-image: url("assets/reunion.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+    }
+
+/* -------------------------------------------------------------------------------------*/
+#quienes-somos .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#quienes-somos .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#quienes-somos h2{
+    margin-top: 0px;
+}
+
+#quienes-somos .img-container{
+    background-image: url("assets/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+}
+/* ------------------------------------------------------------------------------------ */
+#nuestros .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nuestros .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#nuestros h2{
+    margin-top: 0px;
+}
+
+#nuestros .img-container{
+    background-image: url("assets/programar.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+}
+/* ------------------------------------------------------------------------------------- */
+#caracteristicas1 .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#caracteristicas1 .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#caracteristicas1 h2{
+    margin-top: 0px;
+}
+
+#caracteristicas1 .img-container{
+    background-image: url("assets/fullstack.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+}
+/* -------------------------------------------------------------------------------------- */
+#contacto1 .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contacto1 .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#contacto1 h2{
+    margin-top: 0px;
+}
+
+#contacto1 .img-container{
+    background-image: url("assets/polanco.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+    #nuestros-servicios .programas{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-servicios .p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios .h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios .h3{
+        margin-top: 0;
+    }
+
+
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-color: rgb(50,50,50);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/front-end.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/fullstack.jpg");
+    
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("assets/python.jpg");
+    
+}
+
+
+
+    #caracteristicas{
+        background-image: url("assets/programar.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+
+    #aplica-ya h2{
+        font-size: 5em;
+    }
+
+    #aplica-ya button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content:center ;
+
+    }
+
+@media (min-width:1100px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
